@@ -26,6 +26,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //To accessibility
+        view.accessibilityIdentifier = "detailView"
+        
         self.initialConfig()
         
         if let type = pokemon?.types.first {
